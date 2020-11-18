@@ -1,14 +1,26 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-standardization
-===============
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# standardization
 
 <!-- badges: start -->
 <!-- badges: end -->
+
 The goal of standardization is to standardize numbers in a given numeric vector.
 
-Installation
-------------
+## Installation
 
 You can install the released version of standardization from [CRAN](https://CRAN.R-project.org) with:
 
@@ -16,14 +28,13 @@ You can install the released version of standardization from [CRAN](https://CRAN
 devtools::install_github("ahushirley/standardization")
 ```
 
-Example
--------
+## Example
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```{r example}
 library(standardization)
 m <- c(2, 3, 5, 19, 30)
 std_score(m)
-#> [1] -0.7983061 -0.7168463 -0.5539267  0.5865106  1.4825685
 ```
+
