@@ -43,7 +43,7 @@ Process of making this R package:
 10. Create tests by calling `use_testthat()` and `use_test("test_name")`, and then manually write tests in the created R file.
 11. Add dependencies by calling `use_package("package_name")`.
 12. Run `use_readme_rmd()` to generate README.rmd file and manually edit it.
-13. Call `build_readme()` to knit an .md file and check errors in .rmd file
-14. Call `use_vignettes("function_name")` and manually edit the vignettes.
+13. Call `build_readme()` to knit to an .md file and check errors in .rmd file
+14. Call `use_vignettes("function_name")` and manually edit the vignettes in the created .rmd file.
 15. Call `build_vignettes()` to update vignettes for the package.
 16. Finally `check()` and `Install and Restart` R session to test function.
