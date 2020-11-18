@@ -9,7 +9,7 @@ std_score(x, remove_na = TRUE, ...)
 \arguments{
 \item{x}{A numeric vector.}
 
-\item{remove_na}{Logical value indicating whether NA values should be removed before the computation. The default value is \emph{TRUE}.}
+\item{remove_na}{Logical value indicating whether NA values should be removed before the computation. The default value is TRUE.}
 
 \item{...}{Further arguments can be passed to or from other methods.}
 }

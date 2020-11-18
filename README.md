@@ -27,3 +27,23 @@ m <- c(2, 3, 5, 19, 30)
 std_score(m)
 #> [1] -0.7983061 -0.7168463 -0.5539267  0.5865106  1.4825685
 ```
+
+Process of making this R package:
+---------------------------------
+
+1.  Load `devtools` using the code `library(devtools)`.
+2.  Call `create_package()` to initialize a new package in a directory on computer.
+3.  Make the R package to a Git repository using `use_git()`.
+4.  Call `use_r("function_name")` to create and opens a script below R/.
+5.  After writing the function `std_score()`, call `load_all()` to make this function available for interactive use.
+6.  Use `check()` to check the R package.
+7.  Manually edit the title, name and description in *DESCRIPTION* file, and call `use_mit_license()` to get a license.
+8.  Call `library(roxygen2)`, go to *Code -&gt; Insert Roxygen Skeleton* and manually edit the documentation (title, arguments, outputs, examples and etc).
+9.  Run `document()` to update documentation and load the R package.
+10. Create tests by calling `use_testthat()` and `use_test("test_name")`, and then manually write tests in the created R file.
+11. Add dependencies by calling `use_package("package_name")`.
+12. Run `use_readme_rmd()` to generate README.rmd file and manually edit it.
+13. Call `build_readme()` to knit an .md file and check errors in .rmd file
+14. Call `use_vignettes("function_name")` and manually edit the vignettes.
+15. Call `build_vignettes()` to update vignettes for the package.
+16. Finally `check()` and `Install and Restart` R session to test function.

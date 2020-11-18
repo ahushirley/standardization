@@ -6,13 +6,14 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
+
+This vignette shows how standardization function works and a few examples are listed below.
 
 ```{r setup}
 library(standardization)
@@ -21,4 +22,6 @@ library(standardization)
 This is how standardization works:
 ```{r}
 std_score(c(2, 3, 5.7, 6.2, 1))
+gdp = gapminder::gapminder$gdpPercap
+head(std_score(gdp))
 ```

@@ -18,5 +18,6 @@ Suggests:
     knitr,
     rmarkdown
 Imports: 
-    stats
+    stats,
+    gapminder
 VignetteBuilder: knitr
