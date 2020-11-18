@@ -1,0 +1,24 @@
+---
+title: "standardization"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{standardization}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(standardization)
+```
+
+This is how standardization works:
+```{r}
+std_score(c(2, 3, 5.7, 6.2, 1))
+```
