@@ -10,7 +10,7 @@ The goal of standardization is to standardize numbers in a given numeric vector.
 Installation
 ------------
 
-You can install the released version of standardization from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of standardization with:
 
 ``` r
 devtools::install_github("ahushirley/standardization")
